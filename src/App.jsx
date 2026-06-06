@@ -614,7 +614,6 @@ const VIEWER_TABS=[{id:"dashboard",label:"CEO Dashboard",icon:"⚡"},...ADMIN_TA
 
 function Sidebar({ user,tabs,active,setActive,onLogout,selectedMonth,setSelectedMonth,data }) {
   const isViewer=user.role==="viewer";
-  const isAdmin=user.role==="admin";
   return (
     <div style={{ width:230,background:C.surface,borderRight:`1px solid ${C.border}`,display:"flex",flexDirection:"column",flexShrink:0,height:"100vh",position:"sticky",top:0 }}>
       {/* Header */}
